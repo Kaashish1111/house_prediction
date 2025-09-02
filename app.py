@@ -111,7 +111,7 @@ st.markdown("<h1 class='main-title'>House Price Prediction</h1>", unsafe_allow_h
 location = st.text_input("Location (e.g., Whitefield, Indiranagar)")
 total_sqft = st.number_input("Total Square Feet", min_value=200, step=50)
 bhk = st.number_input("Number of BHK", min_value=1, step=1)
-property_age = st.slider("Property Age (years)", 0, 30, 5)
+property_age = st.slider("Property Age (years)", 250, 250, 250)
 amenities_score = st.slider("Amenities Score (0 = poor, 10 = luxury)", 0, 10, 5)
 bath = st.number_input("Number of Bathrooms", min_value=1, step=1)
 
