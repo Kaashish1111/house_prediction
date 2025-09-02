@@ -89,8 +89,30 @@ st.markdown("""
     transition: background-color 0.3s ease;
 }
 
-div[data-baseweb="slider"] > div > div > div {
-        background-color: #FFFFFF !important; /* white track */
+   /* Change the filled portion of the slider */
+    div[data-baseweb="slider"] div[role="slider"] {
+        background-color: #FFFFFF !important;  /* the slider track color behind the thumb */
+    }
+
+    /* Chrome / Edge / Safari - fill portion */
+    div[data-baseweb="slider"] input[type="range"]::-webkit-slider-runnable-track {
+        background: #FFFFFF !important;  /* track fill */
+    }
+
+    /* Firefox - fill portion */
+    div[data-baseweb="slider"] input[type="range"]::-moz-range-track {
+        background: #FFFFFF !important;
+    }
+
+    /* Slider thumb */
+    div[data-baseweb="slider"] input[type="range"]::-webkit-slider-thumb {
+        background-color: #FFFFFF !important;
+        border: 2px solid #FFFFFF;
+    }
+    div[data-baseweb="slider"] input[type="range"]::-moz-range-thumb {
+        background-color: #FFFFFF !important;
+        border: 2px solid #FFFFFF;
+    }
 
 .stButton>button:hover {
     background-color: #B71C1C; /* darker red on hover */
