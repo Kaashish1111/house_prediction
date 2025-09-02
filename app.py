@@ -89,6 +89,9 @@ st.markdown("""
     transition: background-color 0.3s ease;
 }
 
+div[data-baseweb="slider"] > div > div > div {
+        background-color: #FFFFFF !important; /* white track */
+
 .stButton>button:hover {
     background-color: #B71C1C; /* darker red on hover */
     color: white;
