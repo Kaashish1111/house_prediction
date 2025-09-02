@@ -105,7 +105,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown("<h1 class='main-title'>🏠 House Price Prediction</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='main-title'>House Price Prediction</h1>", unsafe_allow_html=True)
 
 # Input fields
 location = st.text_input("Location (e.g., Whitefield, Indiranagar)")

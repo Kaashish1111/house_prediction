@@ -1,4 +1,4 @@
-# ⚡ Bengaluru House Price Prediction with Rich Outputs
+# Bengaluru House Price Prediction with Rich Outputs
 
 import numpy as np
 import pandas as pd
